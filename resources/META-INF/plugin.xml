@@ -1,0 +1,23 @@
+<idea-plugin>
+  <id>seunggabi.branch-title</id>
+  <name>Branch Tab Title</name>
+  <version>0.1.0</version>
+  <vendor url="https://github.com/seunggabi/intellij-branch-title">seunggabi</vendor>
+  <idea-version since-build="253"/>
+  <description><![CDATA[
+    Shows the current Git branch and terminal status (⏳ running / ✓ idle) in the project window title,
+    so merged project window tabs on macOS tell you which branch each project is on.
+    <ul>
+      <li>Branch is read from <code>.git/HEAD</code> (worktrees supported).</li>
+      <li>Shorten branch names with your own regex: Settings → Advanced Settings → Branch Title.</li>
+      <li>⏳ appears while any terminal tab of the project has a title starting with ⏳ (set it from your shell, see README).</li>
+    </ul>
+  ]]></description>
+  <change-notes><![CDATA[0.1.0 — first release.]]></change-notes>
+  <depends>com.intellij.modules.platform</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <titleInfoProvider implementation="seunggabi.BranchTitleInfoProvider"/>
+    <advancedSetting id="branch.title.regex" default="" bundle="messages.BranchTitleBundle" groupKey="group.advanced.settings.branch.title"/>
+    <advancedSetting id="branch.title.replacement" default="$0" bundle="messages.BranchTitleBundle" groupKey="group.advanced.settings.branch.title"/>
+  </extensions>
+</idea-plugin>
