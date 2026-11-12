@@ -1,11 +1,11 @@
 # Branch Tab Title
 
-[![Release](https://img.shields.io/github/v/release/seunggabi/intellij-branch-title)](https://github.com/seunggabi/intellij-branch-title/releases/latest)
-[![Stars](https://img.shields.io/github/stars/seunggabi/intellij-branch-title?style=social)](https://github.com/seunggabi/intellij-branch-title/stargazers)
+[![Release](https://img.shields.io/github/v/release/seunggabi/intellij-branch-tab-title)](https://github.com/seunggabi/intellij-branch-tab-title/releases/latest)
+[![Stars](https://img.shields.io/github/stars/seunggabi/intellij-branch-tab-title?style=social)](https://github.com/seunggabi/intellij-branch-tab-title/stargazers)
 
 [![JetBrains Marketplace](https://img.shields.io/jetbrains/plugin/v/35988?label=Marketplace)](https://plugins.jetbrains.com/plugin/35988-branch-tab-title)
 
-**[Install from Marketplace](https://plugins.jetbrains.com/plugin/35988-branch-tab-title)** · **[⬇ Download latest](https://github.com/seunggabi/intellij-branch-title/releases/latest)** · Settings → Plugins → ⚙ → Install Plugin from Disk
+**[Install from Marketplace](https://plugins.jetbrains.com/plugin/35988-branch-tab-title)** · **[⬇ Download latest](https://github.com/seunggabi/intellij-branch-tab-title/releases/latest)** · Settings → Plugins → ⚙ → Install Plugin from Disk
 
 IntelliJ plugin that appends `⏳|✓ <branch>` to the project window title — useful when project windows are merged into tabs on macOS.
 
@@ -65,7 +65,7 @@ Compiles against the installed IntelliJ (2025.3+) — no Gradle.
 
 ## Star history
 
-[![Star History Chart](https://api.star-history.com/svg?repos=seunggabi/intellij-branch-title&type=Date)](https://star-history.com/#seunggabi/intellij-branch-title&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=seunggabi/intellij-branch-tab-title&type=Date)](https://star-history.com/#seunggabi/intellij-branch-tab-title&Date)
 
 ## License
 

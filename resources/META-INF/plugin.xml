@@ -2,7 +2,7 @@
   <id>seunggabi.branch-title</id>
   <name>Branch Tab Title</name>
   <version>0.1.1</version>
-  <vendor url="https://github.com/seunggabi/intellij-branch-title">seunggabi</vendor>
+  <vendor url="https://github.com/seunggabi/intellij-branch-tab-title">seunggabi</vendor>
   <idea-version since-build="253"/>
   <description><![CDATA[
     Shows the current Git branch and terminal status (⏳ running / ✓ idle) in the project window title,
