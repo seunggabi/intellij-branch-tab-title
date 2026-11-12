@@ -1,5 +1,10 @@
 # Branch Tab Title
 
+[![Release](https://img.shields.io/github/v/release/seunggabi/intellij-branch-title)](https://github.com/seunggabi/intellij-branch-title/releases/latest)
+[![Stars](https://img.shields.io/github/stars/seunggabi/intellij-branch-title?style=social)](https://github.com/seunggabi/intellij-branch-title/stargazers)
+
+**[⬇ Download latest](https://github.com/seunggabi/intellij-branch-title/releases/latest)** · Settings → Plugins → ⚙ → Install Plugin from Disk
+
 IntelliJ plugin that appends `⏳|✓ <branch>` to the project window title — useful when project windows are merged into tabs on macOS.
 
 ```
@@ -55,6 +60,10 @@ Compiles against the installed IntelliJ (2025.3+) — no Gradle.
 
 - Uses internal IntelliJ API (`TitleInfoProvider`, `ProjectFrameHelper.updateTitle`) to refresh the window title, so it may break on IDE updates.
 - Tested on IntelliJ IDEA 2025.3 (macOS, Classic terminal engine).
+
+## Star history
+
+[![Star History Chart](https://api.star-history.com/svg?repos=seunggabi/intellij-branch-title&type=Date)](https://star-history.com/#seunggabi/intellij-branch-title&Date)
 
 ## License
 
