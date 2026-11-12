@@ -3,7 +3,9 @@
 [![Release](https://img.shields.io/github/v/release/seunggabi/intellij-branch-title)](https://github.com/seunggabi/intellij-branch-title/releases/latest)
 [![Stars](https://img.shields.io/github/stars/seunggabi/intellij-branch-title?style=social)](https://github.com/seunggabi/intellij-branch-title/stargazers)
 
-**[⬇ Download latest](https://github.com/seunggabi/intellij-branch-title/releases/latest)** · Settings → Plugins → ⚙ → Install Plugin from Disk
+[![JetBrains Marketplace](https://img.shields.io/jetbrains/plugin/v/35988?label=Marketplace)](https://plugins.jetbrains.com/plugin/35988-branch-tab-title)
+
+**[Install from Marketplace](https://plugins.jetbrains.com/plugin/35988-branch-tab-title)** · **[⬇ Download latest](https://github.com/seunggabi/intellij-branch-title/releases/latest)** · Settings → Plugins → ⚙ → Install Plugin from Disk
 
 IntelliJ plugin that appends `⏳|✓ <branch>` to the project window title — useful when project windows are merged into tabs on macOS.
 
