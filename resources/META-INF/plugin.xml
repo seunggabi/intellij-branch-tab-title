@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>seunggabi.branch-title</id>
   <name>Branch Tab Title</name>
-  <version>0.1.0</version>
+  <version>0.1.1</version>
   <vendor url="https://github.com/seunggabi/intellij-branch-title">seunggabi</vendor>
   <idea-version since-build="253"/>
   <description><![CDATA[
@@ -13,7 +13,7 @@
       <li>⏳ appears while any terminal tab of the project has a title starting with ⏳ (set it from your shell, see README).</li>
     </ul>
   ]]></description>
-  <change-notes><![CDATA[0.1.0 — first release.]]></change-notes>
+  <change-notes><![CDATA[0.1.1 — fix: title kept updating only on the first value on macOS; poller now starts per project.<br>0.1.0 — first release.]]></change-notes>
   <depends>com.intellij.modules.platform</depends>
   <extensions defaultExtensionNs="com.intellij">
     <titleInfoProvider implementation="seunggabi.BranchTitleInfoProvider"/>
