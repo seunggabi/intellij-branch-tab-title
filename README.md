@@ -62,7 +62,6 @@ Compiles against the installed IntelliJ (2025.3+) — no Gradle.
 
 ## Notes
 
-- Uses internal IntelliJ API (`TitleInfoProvider`, `ProjectFrameHelper.updateTitle`) to refresh the window title, so it may break on IDE updates.
 - Tested on IntelliJ IDEA 2025.3 (macOS, Classic terminal engine).
 
 ## Star history
