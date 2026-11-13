@@ -1,0 +1,38 @@
+name: release
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Skip when the version is already tagged
+        id: ver
+        run: |
+          v=$(sed -n 's:.*<version>\(.*\)</version>.*:\1:p' resources/META-INF/plugin.xml)
+          if git ls-remote --exit-code --tags origin "refs/tags/v$v" >/dev/null; then echo "new=false" >> "$GITHUB_OUTPUT"; else echo "new=true" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/setup-java@v4
+        if: steps.ver.outputs.new == 'true'
+        with: { distribution: temurin, java-version: 21 }
+      # build.sh compiles against an IDE's lib/*, so 253 (since-build) is fetched and cached
+      - uses: actions/cache@v4
+        if: steps.ver.outputs.new == 'true'
+        id: ide
+        with:
+          path: ~/ide
+          key: idea-2025.3
+      - name: Download IDE
+        if: steps.ver.outputs.new == 'true' && steps.ide.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p ~/ide
+          curl -fsSL https://download.jetbrains.com/idea/idea-2025.3.tar.gz | tar -xz -C ~/ide --strip-components=1
+      - name: Build, tag and release
+        if: steps.ver.outputs.new == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          export IDE="$HOME/ide" JAVAC="$JAVA_HOME/bin/javac"
+          ./build.sh release
