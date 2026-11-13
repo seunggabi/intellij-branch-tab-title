@@ -13,6 +13,8 @@ IntelliJ plugin that appends `⏳|✓ <branch>` to the project window title — 
 d ✓ release          a ⏳ feature/PROJ-123_add-login
 ```
 
+![Project tabs showing the branch and terminal status](docs/tabs.png)
+
 - Branch: read from `.git/HEAD` (worktrees supported), refreshed every second
 - ⏳: any terminal tab of the project whose title starts with `⏳` (set by your shell, below)
 - Shorten names: Settings → Advanced Settings → **Branch Title**
